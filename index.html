@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Desarrollador 1</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="static/css/index.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+<body>
+	<div class="row">
+		<div class="col-6">
+
+			<div class="row">
+				<div class="col-6">
+					<p class="text-center p1">CALORIAS:</p>
+				</div>
+
+				<div class="col-6">
+					<p id="caloria" class="p1"></p>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-6">
+					<p class="text-center p1">PESO:</p>
+				</div>
+				<div class="col-6">
+					<p id="peso" class="p1"></p>
+				</div>
+			</div>
+			
+		</div>
+		
+
+		<div class="col-6">
+			<h1 class="text-center">CALORIAS minima:20</h1>
+			<h1 class="text-center">PESO maxima: 60800 gramos</h1>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-6 text-center">
+			<button type="button" class="btn btn-primary" onclick="valores()">Guardar</button>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-12 text-center">
+				<div class="row">
+
+					<div class="col-3">
+						<img src="static/img/burrito.png" width="180" height="200" alt="Responsive image">
+						<p>BURRITO 2c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(2)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-2)"><i class="fas fa-minus"></i></button>
+					</div>
+
+					<div class="col-3">
+						<img src="static/img/cafe.png" width="180" height="200" alt="Responsive image">
+						<p>CAFE 3c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(3)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-3)"><i class="fas fa-minus"></i></button>
+					</div>
+				
+					<div class="col-3">
+						<img src="static/img/cerveza.jpg" width="180" height="200" alt="Responsive image">
+						<p>CERBEZA 4c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(4)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-4)"><i class="fas fa-minus"></i></button>
+					</div>
+					<div class="col-3">
+						<img src="static/img/hamburguesa.jpg" width="180" height="200" alt="Responsive image">
+						<p>HAMBURGUESA 5c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(5)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-5)"><i class="fas fa-minus"></i></button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-3">
+						<img src="static/img/limonada.jpg" width="180" height="200" alt="Responsive image">
+						<p>LIMONADA 6c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(6)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-6)"><i class="fas fa-minus"></i></button>
+					</div>
+					<div class="col-3">
+						<img src="static/img/palomitas.png" width="180" height="200" alt="Responsive image">
+						<p>PALOMITAS 5.5c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(5.5)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-5.5)"><i class="fas fa-minus"></i></button>
+					</div>
+
+					<div class="col-3">
+						<img src="static/img/pescado.png" width="180" height="200" alt="Responsive image">
+						<p>PESCADO 4.5c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(4.5)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-4.5)"><i class="fas fa-minus"></i></button>
+					</div>
+					<div class="col-3">
+						<img src="static/img/pizza.png" width="180" height="200" alt="Responsive image">
+						<p>PIZZA 3.5c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(3.5)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-3.5)"><i class="fas fa-minus"></i></button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-6">
+						<img src="static/img/pollo.png" width="150" height="170" alt="Responsive image">
+						<p>POLLO 2.5c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(2.5)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-2.5)"><i class="fas fa-minus"></i></button>
+					</div>
+					<div class="col-6">
+						<img src="static/img/taco.png" width="150" height="170" alt="Responsive image">
+						<p>TACO 1.5c</p>
+						<button type="button" class="btn btn-primary" onclick="elemento(1.5)"><i class="fas fa-plus"></i></button>
+						<button type="button" class="btn btn-danger" onclick="elemento(-1.5)"><i class="fas fa-minus"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="static/js/jquery-3.4.1.min.js"></script>
+	<script src="static/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+
+
+	var caloria1 = 0;
+	var peso1 = 0; 
+	var pesoneto = 800;
+	
+
+		function elemento(caloria){
+
+			if(caloria < 0 && caloria1 + caloria1 + caloria < 0){
+
+				alert("No se permiten numeros negativos")
+
+				return 0;
+			}
+
+			caloria1 += caloria;
+			peso1 += pesoneto * caloria;
+
+			$('#caloria').text(caloria1);
+			$('#peso').text(peso1);
+		}
+
+			
+		function valores(){
+
+			if(caloria1 < 20){
+
+				alert("Debe Llevar 20 Calorias O mas");
+
+				return 0;
+			}
+
+			if(peso1 > 60800 ){
+
+				alert("Estas muy pesado");
+
+				return 0;
+			}
+
+				alert("Su excursion sera exitosa");
+
+				$('#caloria').text('');
+				$('#peso').text('');
+
+				caloria1 = 0;
+				peso1 = 0;
+
+		}
+	</script>
+</body>
+</html>
